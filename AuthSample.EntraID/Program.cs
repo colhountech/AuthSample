@@ -1,3 +1,10 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.Identity.Web;
+using Microsoft.Identity.Web.UI;
+
 namespace AuthSample.EntraID;
 
 public class Program
@@ -8,7 +15,16 @@ public class Program
         builder.AddServiceDefaults();
 
         // Add services to the container.
-        builder.Services.AddRazorPages();
+        builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
+            .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
+
+        builder.Services.AddAuthorization(options =>
+        {
+            // By default, all incoming requests will be authorized according to the default policy.
+            options.FallbackPolicy = options.DefaultPolicy;
+        });
+        builder.Services.AddRazorPages()
+            .AddMicrosoftIdentityUI();
 
         var app = builder.Build();
 
@@ -30,6 +46,7 @@ public class Program
         app.UseAuthorization();
 
         app.MapRazorPages();
+        app.MapControllers();
 
         app.Run();
     }
