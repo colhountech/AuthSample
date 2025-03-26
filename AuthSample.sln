@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthSample.ServiceDefaults"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthSample.Individual", "AuthSample.Individual\AuthSample.Individual.csproj", "{49B49C08-E17B-4ECA-AAE5-0AA9878A74BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthSample.EntraID", "AuthSample.EntraID\AuthSample.EntraID.csproj", "{F6DB2063-6B7A-41BC-B5EC-DE2E87C46F93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{49B49C08-E17B-4ECA-AAE5-0AA9878A74BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49B49C08-E17B-4ECA-AAE5-0AA9878A74BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49B49C08-E17B-4ECA-AAE5-0AA9878A74BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DB2063-6B7A-41BC-B5EC-DE2E87C46F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DB2063-6B7A-41BC-B5EC-DE2E87C46F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DB2063-6B7A-41BC-B5EC-DE2E87C46F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DB2063-6B7A-41BC-B5EC-DE2E87C46F93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
