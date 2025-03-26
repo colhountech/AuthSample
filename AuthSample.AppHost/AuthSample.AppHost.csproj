@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AuthSample.Individual\AuthSample.Individual.csproj" />
     <ProjectReference Include="..\AuthSample.None\AuthSample.None.csproj" />
   </ItemGroup>
 
