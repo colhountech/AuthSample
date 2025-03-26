@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthSample.Individual", "Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthSample.EntraID", "AuthSample.EntraID\AuthSample.EntraID.csproj", "{9E06B0CB-3FBC-42CC-B6C9-472FA55DCF41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthSample.SocialLogins", "AuthSample.SocialLogins\AuthSample.SocialLogins.csproj", "{157AD1DF-4418-4080-A46E-9C871D0CDAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9E06B0CB-3FBC-42CC-B6C9-472FA55DCF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E06B0CB-3FBC-42CC-B6C9-472FA55DCF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E06B0CB-3FBC-42CC-B6C9-472FA55DCF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{157AD1DF-4418-4080-A46E-9C871D0CDAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{157AD1DF-4418-4080-A46E-9C871D0CDAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{157AD1DF-4418-4080-A46E-9C871D0CDAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{157AD1DF-4418-4080-A46E-9C871D0CDAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,6 +23,7 @@
     <ProjectReference Include="..\AuthSample.EntraID\AuthSample.EntraID.csproj" />
     <ProjectReference Include="..\AuthSample.Individual\AuthSample.Individual.csproj" />
     <ProjectReference Include="..\AuthSample.None\AuthSample.None.csproj" />
+    <ProjectReference Include="..\AuthSample.SocialLogins\AuthSample.SocialLogins.csproj" />
   </ItemGroup>
 
 </Project>
