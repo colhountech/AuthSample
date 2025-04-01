@@ -16,10 +16,15 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
-            .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
+             .AddMicrosoftIdentityWebApp(options =>
+             {
+                 builder.Configuration.Bind("AzureAd", options);
+                 options.TokenValidationParameters.RoleClaimType = "groups"; 
+             });
 
         builder.Services.AddAuthorization(options =>
         {
+            options.AddPolicy(Roles.HQUsers, policy => policy.RequireRole(Roles.HQUsers));
             // By default, all incoming requests will be authorized according to the default policy.
             options.FallbackPolicy = options.DefaultPolicy;
         });
@@ -43,6 +48,7 @@ public class Program
 
         app.UseRouting();
 
+        app.UseAuthentication(); // Add this line
         app.UseAuthorization();
 
         app.MapRazorPages();
